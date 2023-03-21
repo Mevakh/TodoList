@@ -1,8 +1,3 @@
-let task = $("<div class='todoList'></div>")
-let del = $("<i class='fa-sharp fa-solid fa-pen-to-square'></i>")
-const edit = $("<i class='fa-sharp fa-solid fa-trash'></i>")
-
-
 $(".todoInput").on("keyup",function(e){
     if(e.keyCode== 13 && $(".todoInput").val() !=""){
         let task = $("<div class='todoList'></div>").text($(".todoInput").val());
